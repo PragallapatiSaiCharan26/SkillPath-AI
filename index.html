@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillPath AI - A student career-awareness and job-preparation platform. Explore tech careers, assess skill gaps, and follow structured roadmaps.">
+  <title>SkillPath AI | Student Career & Job Preparation Platform</title>
+
+  <!-- External Stylesheet (Separation of Concerns: CSS in style.css) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home">
+
+  <!-- Accessibility Skip to Main Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       SECTION 1: NAVIGATION
+       ========================================================================= -->
+  <header id="main-header" class="site-header">
+    <div class="container header-container">
+      <a href="#home" class="logo-link" aria-label="SkillPath AI Homepage">
+        <span class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </span>
+        <span class="logo-text">SkillPath <span class="logo-badge">AI</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav id="main-nav" class="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#careers" class="nav-link">Careers</a></li>
+          <li><a href="#assessment" class="nav-link">Assessment</a></li>
+          <li><a href="#gap-analysis" class="nav-link">Gap Analysis</a></li>
+          <li><a href="#resources" class="nav-link">Learning Finder</a></li>
+          <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#why-us" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#careers" class="btn btn-primary btn-sm header-cta">Get Started</a>
+        <!-- Mobile Navigation Toggle Button -->
+        <button id="mobile-nav-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav-drawer" class="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#careers" class="mobile-nav-link">Explore Careers</a></li>
+        <li><a href="#assessment" class="mobile-nav-link">Skill Assessment</a></li>
+        <li><a href="#gap-analysis" class="mobile-nav-link">Gap Analysis</a></li>
+        <li><a href="#resources" class="mobile-nav-link">Learning Finder</a></li>
+        <li><a href="#roadmap" class="mobile-nav-link">Learning Roadmap</a></li>
+        <li><a href="#how-it-works" class="mobile-nav-link">How It Works</a></li>
+        <li><a href="#why-us" class="mobile-nav-link">About</a></li>
+        <li class="mobile-drawer-cta">
+          <a href="#careers" class="btn btn-primary btn-block mobile-cta-btn">Get Started</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         SECTION 2: HERO
+         ======================================================================= -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pill-dot"></span>
+            <span>Student Career & Job Preparation</span>
+          </div>
+          <h1 class="hero-title">Your Career Journey Starts Here.</h1>
+          <p class="hero-description">
+            Discover the skills employers expect, identify your skill gaps, and follow a clear learning path to prepare for your dream career.
+          </p>
+          <div class="hero-actions">
+            <a href="#careers" class="btn btn-primary btn-lg">Explore Career Paths</a>
+            <a href="#how-it-works" class="btn btn-outline btn-lg">How It Works</a>
+          </div>
+          <div class="hero-features-list">
+            <div class="hero-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>100% Free Learning Resources</span>
+            </div>
+            <div class="hero-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Structured Roadmaps</span>
+            </div>
+            <div class="hero-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>No Account or Setup Required</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Visualizing Career Growth & Learning Progress -->
+        <div class="hero-visual" aria-label="Visual illustration of student career progression roadmap">
+          <div class="roadmap-card">
+            <div class="roadmap-card-header">
+              <div class="card-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="roadmap-card-title">Career Readiness Roadmap</span>
+              <span class="status-badge">In Progress</span>
+            </div>
+
+            <div class="roadmap-card-body">
+              <div class="progress-indicator">
+                <div class="progress-meta">
+                  <span class="progress-label">Path Preparedness</span>
+                  <span class="progress-percent">Phase 3 of 4</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+
+              <div class="roadmap-milestones">
+                <div class="milestone-step completed">
+                  <div class="milestone-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="milestone-details">
+                    <h4>1. Discover Target Career</h4>
+                    <p>Selected track: Frontend / Python / Data / Java</p>
+                  </div>
+                </div>
+
+                <div class="milestone-step completed">
+                  <div class="milestone-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="milestone-details">
+                    <h4>2. Skill Gap Evaluation</h4>
+                    <p>Identified core concepts & tools to master</p>
+                  </div>
+                </div>
+
+                <div class="milestone-step current">
+                  <div class="milestone-icon">
+                    <span class="pulse-dot"></span>
+                  </div>
+                  <div class="milestone-details">
+                    <h4>3. Curated Free Learning</h4>
+                    <p>Following step-by-step module roadmaps</p>
+                  </div>
+                </div>
+
+                <div class="milestone-step upcoming">
+                  <div class="milestone-icon">
+                    <span class="empty-circle"></span>
+                  </div>
+                  <div class="milestone-details">
+                    <h4>4. Portfolio & Interview Ready</h4>
+                    <p>Building verified projects and mock questions</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="roadmap-tags">
+                <span class="tag">HTML & CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Git & GitHub</span>
+                <span class="tag">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 3: CAREER EXPLORER
+         ======================================================================= -->
+    <section id="careers" class="section careers-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Career Explorer</span>
+          <h2 class="section-title">Discover Your Future Career</h2>
+          <p class="section-subtitle">
+            Explore industry-demanded tech roles, inspect core prerequisite skills, and preview your structured learning roadmap.
+          </p>
+        </div>
+
+        <!-- Career Cards Grid -->
+        <div class="career-cards-grid" role="region" aria-label="Career Paths Selection">
+          
+          <!-- Card 1: Python Developer -->
+          <article class="career-card" data-career-id="python-dev" tabindex="0" role="button" aria-expanded="false">
+            <div class="career-card-top">
+              <div class="career-icon-wrapper python-accent">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <span class="career-category">Backend & Automation</span>
+            </div>
+            <h3 class="career-title">Python Developer</h3>
+            <p class="career-description">
+              Build backend web services, automate workflows, design clean APIs, and handle versatile data manipulation tasks.
+            </p>
+            <div class="skills-preview">
+              <span class="skills-label">Skills Preview:</span>
+              <div class="skills-tags">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">OOP</span>
+                <span class="skill-pill">SQL</span>
+                <span class="skill-pill">Problem Solving</span>
+              </div>
+            </div>
+            <div class="career-card-footer">
+              <button class="btn btn-outline btn-block explore-btn" data-target="python-dev">
+                <span>Explore Career</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2: Frontend Developer -->
+          <article class="career-card" data-career-id="frontend-dev" tabindex="0" role="button" aria-expanded="false">
+            <div class="career-card-top">
+              <div class="career-icon-wrapper frontend-accent">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="career-category">Web Development</span>
+            </div>
+            <h3 class="career-title">Frontend Developer</h3>
+            <p class="career-description">
+              Create responsive, accessible, and interactive user interfaces for modern web applications using web standards.
+            </p>
+            <div class="skills-preview">
+              <span class="skills-label">Skills Preview:</span>
+              <div class="skills-tags">
+                <span class="skill-pill">HTML</span>
+                <span class="skill-pill">CSS</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">Responsive Design</span>
+              </div>
+            </div>
+            <div class="career-card-footer">
+              <button class="btn btn-outline btn-block explore-btn" data-target="frontend-dev">
+                <span>Explore Career</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3: Data Analyst -->
+          <article class="career-card" data-career-id="data-analyst" tabindex="0" role="button" aria-expanded="false">
+            <div class="career-card-top">
+              <div class="career-icon-wrapper data-accent">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <span class="career-category">Data & Insights</span>
+            </div>
+            <h3 class="career-title">Data Analyst</h3>
+            <p class="career-description">
+              Analyze raw data sets to discover patterns, answer key business questions, and build intuitive visual reports.
+            </p>
+            <div class="skills-preview">
+              <span class="skills-label">Skills Preview:</span>
+              <div class="skills-tags">
+                <span class="skill-pill">Excel</span>
+                <span class="skill-pill">SQL</span>
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">Data Visualization</span>
+              </div>
+            </div>
+            <div class="career-card-footer">
+              <button class="btn btn-outline btn-block explore-btn" data-target="data-analyst">
+                <span>Explore Career</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4: Java Developer -->
+          <article class="career-card" data-career-id="java-dev" tabindex="0" role="button" aria-expanded="false">
+            <div class="career-card-top">
+              <div class="career-icon-wrapper java-accent">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                  <line x1="6" y1="1" x2="6" y2="4"></line>
+                  <line x1="10" y1="1" x2="10" y2="4"></line>
+                  <line x1="14" y1="1" x2="14" y2="4"></line>
+                </svg>
+              </div>
+              <span class="career-category">Enterprise Backend</span>
+            </div>
+            <h3 class="career-title">Java Developer</h3>
+            <p class="career-description">
+              Develop robust, secure, and scalable enterprise applications, microservices, and backend architectures.
+            </p>
+            <div class="skills-preview">
+              <span class="skills-label">Skills Preview:</span>
+              <div class="skills-tags">
+                <span class="skill-pill">Java</span>
+                <span class="skill-pill">OOP</span>
+                <span class="skill-pill">SQL</span>
+                <span class="skill-pill">Data Structures</span>
+              </div>
+            </div>
+            <div class="career-card-footer">
+              <button class="btn btn-outline btn-block explore-btn" data-target="java-dev">
+                <span>Explore Career</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Selected Career Interactive Detailed Overview Panel -->
+        <div id="career-detail-panel" class="career-detail-panel" aria-live="polite" hidden>
+          <div class="detail-panel-inner">
+
+            <!-- Top Navigation & Actions Bar -->
+            <div class="detail-top-nav">
+              <button id="detail-back-btn" class="btn btn-outline btn-sm back-to-careers-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="19" y1="12" x2="5" y2="12"></line>
+                  <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                <span>Back to All Careers</span>
+              </button>
+              <button id="close-detail-btn" class="close-btn" aria-label="Close career preview panel">&times;</button>
+            </div>
+
+            <!-- Career Header & Overview -->
+            <div class="detail-header-card">
+              <span id="detail-category" class="detail-category">Career Track</span>
+              <h3 id="detail-title" class="detail-heading">Select a Career Path</h3>
+              <p id="detail-overview" class="detail-overview-text"></p>
+            </div>
+
+            <!-- Section 1: Role Overview & Responsibilities -->
+            <div class="detail-section-block">
+              <div class="detail-grid">
+                <div class="detail-col">
+                  <h4 class="detail-subheading">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Typical Responsibilities
+                  </h4>
+                  <ul id="detail-responsibilities-list" class="detail-bullet-list"></ul>
+                </div>
+                <div class="detail-col">
+                  <h4 class="detail-subheading">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    Common Tools & Technologies
+                  </h4>
+                  <div id="detail-tools-container" class="detail-tools-tags"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 2: Skills Breakdown (Technical & Soft Skills) -->
+            <div class="detail-section-block">
+              <div class="detail-grid">
+                <div class="detail-col">
+                  <h4 class="detail-subheading">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Technical Skills Required
+                  </h4>
+                  <ul id="detail-tech-skills-list" class="detail-check-list"></ul>
+                </div>
+                <div class="detail-col">
+                  <h4 class="detail-subheading">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                      <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                      <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                    </svg>
+                    Essential Soft Skills
+                  </h4>
+                  <ul id="detail-soft-skills-list" class="detail-check-list"></ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Section 3: Beginner Learning Priorities -->
+            <div class="detail-section-block">
+              <div class="detail-block-header">
+                <h4 class="detail-subheading">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                    <polyline points="5 12 12 5 19 12"></polyline>
+                  </svg>
+                  Beginner Learning Priorities
+                </h4>
+                <p class="detail-subheading-note">Recommended progression if you are learning this path from scratch.</p>
+              </div>
+              <div id="detail-priorities-list" class="priorities-grid"></div>
+            </div>
+
+            <!-- Section 4: Practical Portfolio Project Ideas -->
+            <div class="detail-section-block">
+              <div class="detail-block-header">
+                <h4 class="detail-subheading">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                  Three Practical Portfolio Project Ideas
+                </h4>
+                <p class="detail-subheading-note">Realistic projects that demonstrate your ability to solve real problems without relying on tutorial clones.</p>
+              </div>
+              <div id="detail-projects-grid" class="projects-grid"></div>
+            </div>
+
+            <!-- Section 5: Entry-Level Preparation Checklist -->
+            <div class="detail-section-block">
+              <div class="detail-block-header">
+                <h4 class="detail-subheading">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 11l3 3L22 4"></path>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                  </svg>
+                  Entry-Level Preparation Checklist
+                </h4>
+                <p class="detail-subheading-note">Benchmark your readiness before applying for student internships or entry-level positions.</p>
+              </div>
+              <div id="detail-checklist-container" class="checklist-items-group"></div>
+            </div>
+
+            <!-- Section 6: Industry Expectations Disclaimer -->
+            <div class="disclaimer-callout">
+              <div class="disclaimer-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </div>
+              <div class="disclaimer-content">
+                <h5 class="disclaimer-heading">Industry Expectations & Ethics Notice</h5>
+                <p id="detail-disclaimer" class="disclaimer-text"></p>
+              </div>
+            </div>
+
+            <!-- Bottom Actions Bar -->
+            <div class="detail-actions-bar">
+              <button id="detail-bottom-back-btn" class="btn btn-outline back-to-careers-btn">
+                <span>← Back to All Careers</span>
+              </button>
+              <button id="start-assessment-btn" class="btn btn-primary btn-lg start-assessment-action">
+                <span>Start Skill Assessment</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 3.5: STUDENT SKILL ASSESSMENT
+         ======================================================================= -->
+    <section id="assessment" class="section assessment-section" aria-live="polite">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Student Skill Assessment</span>
+          <h2 class="section-title">Evaluate Your Career Readiness</h2>
+          <p class="section-subtitle">
+            Rate your current proficiency across the 6 essential skills required for your selected track to evaluate where you stand.
+          </p>
+        </div>
+
+        <!-- Assessment Main Container -->
+        <div class="assessment-container">
+          
+          <!-- Quick Career Selector Bar -->
+          <div class="assessment-career-selector" role="region" aria-label="Select Career Path for Assessment">
+            <span class="selector-label">Select Career Path:</span>
+            <div class="career-selector-pills" id="assessment-pills">
+              <button type="button" class="career-select-pill active" data-career="python-dev">Python Developer</button>
+              <button type="button" class="career-select-pill" data-career="frontend-dev">Frontend Developer</button>
+              <button type="button" class="career-select-pill" data-career="data-analyst">Data Analyst</button>
+              <button type="button" class="career-select-pill" data-career="java-dev">Java Developer</button>
+            </div>
+          </div>
+
+          <!-- Active Career Header Card -->
+          <div class="assessment-info-card">
+            <div class="assessment-info-top">
+              <div>
+                <span id="assessment-career-category" class="assessment-category-badge">Backend & Automation</span>
+                <h3 id="assessment-career-title" class="assessment-career-heading">Python Developer Skill Assessment</h3>
+              </div>
+              <button type="button" id="assessment-back-to-careers" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="19" y1="12" x2="5" y2="12"></line>
+                  <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                <span>View Career Overview</span>
+              </button>
+            </div>
+            <p id="assessment-career-intro" class="assessment-intro-text">
+              For each core skill below, select the level that honestly reflects your current ability. Your ratings are stored locally on your device to generate your personalized Skill Gap Analysis and match score.
+            </p>
+
+            <!-- Progress Tracking Bar -->
+            <div class="assessment-progress-wrapper" aria-label="Assessment Progress">
+              <div class="assessment-progress-header">
+                <span class="progress-title">Assessment Progress</span>
+                <div class="progress-stats">
+                  <span id="assessment-rated-count" class="rated-count">0</span> of <span id="assessment-total-count" class="total-count">6</span> skills rated
+                  <span id="assessment-progress-percent" class="progress-percent-badge">(0% Complete)</span>
+                </div>
+              </div>
+              <div class="progress-track" role="progressbar" id="assessment-progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div id="assessment-progress-fill" class="progress-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Validation Alert Box (hidden by default) -->
+          <div id="assessment-validation-alert" class="validation-alert" role="alert" hidden>
+            <div class="alert-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <div class="alert-content">
+              <h4 class="alert-heading">Incomplete Assessment</h4>
+              <p id="validation-alert-text" class="alert-text">Please rate all 6 skills before submitting.</p>
+            </div>
+          </div>
+
+          <!-- Skills Assessment Form -->
+          <form id="assessment-form" class="assessment-form" novalidate>
+            <div id="assessment-skills-list" class="assessment-skills-list">
+              <!-- Dynamically populated 6 skill cards -->
+            </div>
+
+            <!-- Form Actions Bar -->
+            <div class="assessment-form-actions">
+              <button type="button" id="assessment-reset-btn" class="btn btn-outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                  <path d="M3 3v5h5"></path>
+                </svg>
+                <span>Clear Ratings</span>
+              </button>
+              <button type="submit" id="assessment-submit-btn" class="btn btn-primary btn-lg">
+                <span>Submit Assessment</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <!-- Submission Result & Confirmation View (hidden until submission) -->
+          <div id="assessment-result-view" class="assessment-result-view" hidden>
+            <div class="result-card">
+              <div class="result-header">
+                <div class="result-success-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="result-badge">Assessment Completed</span>
+                  <h3 id="result-career-title" class="result-heading">Python Developer Skills Evaluation</h3>
+                  <p class="result-timestamp" id="result-timestamp"></p>
+                </div>
+              </div>
+
+              <p class="result-explanation">
+                Your self-assessment has been validated and securely stored in your browser's local storage. Below is a summary of your reported proficiency across all 6 core skills:
+              </p>
+
+              <!-- Ratings Summary Grid -->
+              <div id="result-ratings-grid" class="result-ratings-grid">
+                <!-- Dynamically populated rating badges -->
+              </div>
+
+              <!-- Stage 5 Gap Analysis Active Card -->
+              <div class="stage5-gap-card">
+                <div class="gap-card-icon">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                </div>
+                <div class="gap-card-content">
+                  <div class="gap-card-badge-row">
+                    <span class="gap-card-badge">Analysis Complete</span>
+                    <span class="gap-card-score-preview" id="result-score-preview">Match Score: Calculating...</span>
+                  </div>
+                  <h4 class="gap-card-title">Skill Gap Analysis Generated</h4>
+                  <p class="gap-card-text">
+                    Your ratings have been benchmarked against entry-level expectations. Inspect your exact gaps, strong areas, and recommended next steps.
+                  </p>
+                </div>
+                <div class="gap-card-btn-wrap">
+                  <a href="#gap-analysis" id="result-view-gap-btn" class="btn btn-primary btn-block">
+                    <span>View Skill Gap Analysis</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="result-actions">
+                <button type="button" id="result-retake-btn" class="btn btn-outline">
+                  <span>Update / Retake Assessment</span>
+                </button>
+                <a href="#gap-analysis" class="btn btn-accent" id="result-quick-gap-btn">
+                  <span>View Gap Analysis</span>
+                </a>
+                <a href="#careers" class="btn btn-outline" id="result-back-careers-btn">
+                  <span>Back to Career Explorer</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 3.6: SKILL GAP ANALYSIS (Stage 5)
+         ======================================================================= -->
+    <section id="gap-analysis" class="section gap-analysis-section" aria-labelledby="gap-analysis-title">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-badge">Skill Gap Analysis</span>
+          <h2 id="gap-analysis-title" class="section-title">Analyze Your Career Readiness Gaps</h2>
+          <p class="section-subtitle">
+            Compare your self-assessed skills directly against industry entry-level benchmarks, discover your match score, and pinpoint exact priorities to focus your learning.
+          </p>
+        </div>
+
+        <!-- Educational Disclaimer Banner -->
+        <div class="gap-disclaimer-banner" role="note" aria-label="Educational Target Disclaimer">
+          <div class="disclaimer-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </div>
+          <div class="disclaimer-content">
+            <strong>Preparation Benchmark Notice:</strong>
+            <span> Benchmark proficiency levels represent recommended college student preparation targets defined for this educational platform. They are not universal employer mandates, as requirements vary across companies and teams. Match scores reflect self-assessed alignment with these benchmarks, not employment or placement guarantees.</span>
+          </div>
+        </div>
+
+        <!-- Career Selector Pills -->
+        <div class="gap-career-selector" role="region" aria-label="Select Career Path for Gap Analysis">
+          <span class="selector-label">Select Career Track:</span>
+          <div class="career-pills-row" id="gap-career-pills" role="tablist">
+            <button type="button" class="career-select-pill active" data-career="python-dev" role="tab" aria-selected="true">
+              <span>Python Developer</span>
+            </button>
+            <button type="button" class="career-select-pill" data-career="frontend-dev" role="tab" aria-selected="false">
+              <span>Frontend Developer</span>
+            </button>
+            <button type="button" class="career-select-pill" data-career="data-analyst" role="tab" aria-selected="false">
+              <span>Data Analyst</span>
+            </button>
+            <button type="button" class="career-select-pill" data-career="java-dev" role="tab" aria-selected="false">
+              <span>Java Developer</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Empty State Container (shown when no assessment for this career exists) -->
+        <div id="gap-empty-state" class="gap-empty-state" hidden>
+          <div class="empty-state-card">
+            <div class="empty-state-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="empty-state-title" id="empty-state-career-title">No Assessment Found for Python Developer</h3>
+            <p class="empty-state-desc">
+              You haven't completed the 6-skill self-assessment for this career track yet. Take 2 minutes to rate your skills and unlock your personalized gap analysis, match score, and targeted recommendations.
+            </p>
+            <div class="empty-state-actions">
+              <button type="button" id="gap-start-assessment-btn" class="btn btn-primary btn-lg">
+                <span>Start Skill Assessment</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+              <a href="#careers" class="btn btn-outline">
+                <span>Explore Careers</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Gap Analysis Content Container (shown when assessment exists) -->
+        <div id="gap-analysis-content" class="gap-analysis-content">
+          
+          <!-- Top Row: Overview Card with Match Score Gauge & Career Info -->
+          <div class="gap-overview-card">
+            <div class="gap-overview-header">
+              <div class="gap-career-info">
+                <span class="gap-category-badge" id="gap-career-category">Backend & Automation</span>
+                <h3 class="gap-career-heading" id="gap-career-heading">Python Developer Gap Analysis</h3>
+                <p class="gap-evaluated-date" id="gap-evaluated-date">Evaluated on Nov 6, 2026</p>
+              </div>
+              <div class="gap-actions-top">
+                <button type="button" id="gap-retake-btn" class="btn btn-outline btn-sm">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="23 4 23 10 17 10"></polyline>
+                    <polyline points="1 20 1 14 7 14"></polyline>
+                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                  </svg>
+                  <span>Retake / Update Ratings</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Match Score Display Block -->
+            <div class="match-score-block">
+              <div class="score-radial-wrapper">
+                <div class="score-circle-container">
+                  <svg class="score-svg" viewBox="0 0 120 120" aria-hidden="true">
+                    <circle class="score-bg-circle" cx="60" cy="60" r="50"></circle>
+                    <circle class="score-fill-circle" id="score-fill-circle" cx="60" cy="60" r="50"></circle>
+                  </svg>
+                  <div class="score-inner-text">
+                    <span class="score-number" id="gap-score-value">77%</span>
+                    <span class="score-subtext">Match</span>
+                  </div>
+                </div>
+              </div>
+              <div class="score-details-wrapper">
+                <div class="score-status-row">
+                  <span class="score-status-badge" id="gap-score-status">Strong Alignment</span>
+                  <span class="score-formula-hint">Capped at 100% benchmark target</span>
+                </div>
+                <h4 class="score-headline" id="gap-score-headline">Self-Assessed Skill Match Score</h4>
+                <p class="score-explanation" id="gap-score-explanation">
+                  Based on your self-reported ratings, you currently meet <strong>3 out of 6</strong> benchmark target proficiencies. Focus on the high-priority skills below to accelerate your job readiness.
+                </p>
+                <!-- Clarified 3-Metric Score Breakdown -->
+                <div class="score-stats-grid" aria-label="Score Point Breakdown">
+                  <div class="score-stat-chip chip-student">
+                    <span class="chip-label">Your Assessed Score</span>
+                    <strong class="chip-value" id="gap-student-points">10 pts</strong>
+                    <span class="chip-sub">Sum of your 6 ratings</span>
+                  </div>
+                  <div class="score-stat-chip chip-max">
+                    <span class="chip-label">Maximum Possible</span>
+                    <strong class="chip-value" id="gap-max-points">18 pts</strong>
+                    <span class="chip-sub">6 skills &times; Level 3 (Adv)</span>
+                  </div>
+                  <div class="score-stat-chip chip-target">
+                    <span class="chip-label">Benchmark Target</span>
+                    <strong class="chip-value" id="gap-target-points">13 pts</strong>
+                    <span class="chip-sub">Required for 100% match</span>
+                  </div>
+                </div>
+
+                <!-- Explicit Score Calculation Box -->
+                <div class="score-formula-box" id="gap-formula-box">
+                  <span class="formula-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                  </span>
+                  <span class="formula-text" id="gap-formula-text">Calculation: (10 Your Points &divide; 13 Benchmark Target) &times; 100 = 77% Match (Capped at 100%)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metric Cards Grid: 3 Pillars (Target Met, Needs Improvement, High Priority) -->
+          <div class="gap-summary-cards-grid">
+            
+            <!-- Card 1: Target Met / Strong Skills (Gap <= 0) -->
+            <div class="summary-metric-card metric-met">
+              <div class="metric-card-header">
+                <div class="metric-icon met-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span class="metric-card-tag met-tag">Target Met</span>
+              </div>
+              <div class="metric-count" id="count-target-met">3</div>
+              <h4 class="metric-title">Strong Skills (Gap &le; 0)</h4>
+              <p class="metric-desc">You meet or exceed the entry-level preparation benchmark for these skills.</p>
+              <div class="metric-skills-pills" id="pills-target-met">
+                <!-- Dynamically populated skill tags -->
+              </div>
+            </div>
+
+            <!-- Card 2: Needs Improvement (Gap == 1) -->
+            <div class="summary-metric-card metric-improvement">
+              <div class="metric-card-header">
+                <div class="metric-icon improvement-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                    <polyline points="5 12 12 5 19 12"></polyline>
+                  </svg>
+                </div>
+                <span class="metric-card-tag improvement-tag">Needs Improvement</span>
+              </div>
+              <div class="metric-count" id="count-improvement">2</div>
+              <h4 class="metric-title">Moderate Gaps (Gap = 1)</h4>
+              <p class="metric-desc">Only one proficiency level away from meeting the target benchmark.</p>
+              <div class="metric-skills-pills" id="pills-improvement">
+                <!-- Dynamically populated skill tags -->
+              </div>
+            </div>
+
+            <!-- Card 3: High-Priority Learning Areas (Gap == 2) -->
+            <div class="summary-metric-card metric-priority">
+              <div class="metric-card-header">
+                <div class="metric-icon priority-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                </div>
+                <span class="metric-card-tag priority-tag">High Priority</span>
+              </div>
+              <div class="metric-count" id="count-priority">1</div>
+              <h4 class="metric-title">Critical Gaps (Gap = 2)</h4>
+              <p class="metric-desc">Beginner rating on an Advanced benchmark. Requires immediate focus.</p>
+              <div class="metric-skills-pills" id="pills-priority">
+                <!-- Dynamically populated skill tags -->
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Section: Detailed Skill-by-Skill Comparison Bars -->
+          <div class="gap-details-block">
+            <div class="block-header">
+              <div>
+                <h3 class="block-title">Skill-by-Skill Proficiency Comparison</h3>
+                <p class="block-subtitle">
+                  Visual comparison between your self-reported proficiency and target entry-level preparation benchmarks.
+                </p>
+              </div>
+              <div class="level-legend" aria-label="Level scale legend">
+                <span class="legend-item"><span class="legend-dot level-1"></span> Level 1: Beginner</span>
+                <span class="legend-item"><span class="legend-dot level-2"></span> Level 2: Intermediate</span>
+                <span class="legend-item"><span class="legend-dot level-3"></span> Level 3: Advanced</span>
+              </div>
+            </div>
+
+            <!-- Dynamic Comparison Cards Grid -->
+            <div class="comparison-cards-grid" id="gap-comparison-grid">
+              <!-- Dynamically populated comparison cards -->
+            </div>
+          </div>
+
+          <!-- Section: Actionable Priority Learning Recommendations -->
+          <div class="gap-recommendations-block">
+            <div class="block-header">
+              <div>
+                <span class="block-badge">Actionable Next Steps</span>
+                <h3 class="block-title">Targeted Learning Recommendations</h3>
+                <p class="block-subtitle">
+                  Step-by-step guidance and project exercises tailored to close your identified skill gaps.
+                </p>
+              </div>
+            </div>
+
+            <!-- Dynamic Recommendations List -->
+            <div class="recommendations-container" id="gap-recommendations-container">
+              <!-- Dynamically populated recommendation cards -->
+            </div>
+          </div>
+
+          <!-- Bottom Navigation / Next Steps -->
+          <div class="gap-footer-actions">
+            <button type="button" id="gap-bottom-retake-btn" class="btn btn-outline btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <polyline points="1 20 1 14 7 14"></polyline>
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+              </svg>
+              <span>Retake / Update Assessment</span>
+            </button>
+            <a href="#resources" id="gap-find-resources-btn" class="btn btn-primary btn-lg">
+              <span>Find Free Learning Resources</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#roadmap" id="gap-view-roadmap-btn" class="btn btn-outline btn-lg">
+              <span>View 4-Week Roadmap</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#careers" class="btn btn-outline btn-lg">
+              <span>Explore Other Careers</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 3.7: FREE LEARNING FINDER (Stage 6)
+         ======================================================================= -->
+    <section id="resources" class="section resources-section" aria-labelledby="resources-title">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-badge">Free Learning Finder</span>
+          <h2 id="resources-title" class="section-title">Curated Free Learning Resources</h2>
+          <p class="section-subtitle">
+            Targeted tutorials, verified documentation, and open courses matched to your skill gaps and career goals—100% free with no paid subscriptions required.
+          </p>
+        </div>
+
+        <!-- Ethical Free Learning Transparency Banner -->
+        <div class="resource-ethics-banner" role="note" aria-label="Free Learning Policy">
+          <div class="banner-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
+          <div class="banner-body">
+            <strong>100% Free Learning Commitment:</strong>
+            <span> Every resource listed here provides free access to high-quality educational content. Where platforms offer optional paid certificates, we explicitly highlight that the learning materials, code exercises, and documentation are completely free to study without paying.</span>
+          </div>
+        </div>
+
+        <!-- Personalization Context Bar -->
+        <div class="resource-context-card" id="resource-context-card">
+          <div class="context-main">
+            <div class="context-career-tag">
+              <span class="context-label">Active Career Focus:</span>
+              <span class="context-career-name" id="resource-active-career">Python Developer</span>
+            </div>
+            <div class="context-gaps-summary" id="resource-gaps-summary">
+              <span class="gap-alert-pill pill-priority" id="res-pill-priority">1 High-Priority Gap</span>
+              <span class="gap-alert-pill pill-improvement" id="res-pill-improvement">2 Moderate Gaps</span>
+            </div>
+          </div>
+          <div class="context-actions">
+            <button type="button" class="btn btn-sm btn-outline" id="res-toggle-gaps-btn">
+              <span>Show Only My Gap Resources</span>
+            </button>
+            <button type="button" class="btn btn-sm btn-ghost" id="res-show-all-btn">
+              <span>Show All Resources</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Resource Controls & Filters Bar -->
+        <div class="resource-filter-controls" role="region" aria-label="Filter Learning Resources">
+          <div class="filter-top-row">
+            <!-- Search Input -->
+            <div class="search-input-wrapper">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="resource-search-input" class="resource-search-input" placeholder="Search by topic, skill, platform, or keyword..." aria-label="Search learning resources">
+              <button type="button" id="resource-search-clear" class="search-clear-btn" aria-label="Clear search" hidden>&times;</button>
+            </div>
+
+            <!-- Career Filter Dropdown -->
+            <div class="filter-dropdown-wrapper">
+              <label for="filter-career-select" class="filter-label">Career Track:</label>
+              <select id="filter-career-select" class="filter-select" aria-label="Filter by career track">
+                <option value="all">All Career Tracks</option>
+                <option value="python-dev">Python Developer</option>
+                <option value="frontend-dev">Frontend Developer</option>
+                <option value="data-analyst">Data Analyst</option>
+                <option value="java-dev">Java Developer</option>
+              </select>
+            </div>
+
+            <!-- Difficulty Level Filter -->
+            <div class="filter-dropdown-wrapper">
+              <label for="filter-difficulty-select" class="filter-label">Difficulty:</label>
+              <select id="filter-difficulty-select" class="filter-select" aria-label="Filter by difficulty level">
+                <option value="all">All Levels</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Skill Category Pills Bar -->
+          <div class="skill-pills-filter-row" id="resource-skill-pills" role="tablist" aria-label="Filter by skill category">
+            <!-- Dynamically populated skill category filter pills -->
+          </div>
+
+          <!-- Filter Status Bar -->
+          <div class="filter-status-bar">
+            <span class="results-count-text" id="resource-results-count">Showing all curated free resources</span>
+            <button type="button" id="resource-reset-filters-btn" class="reset-filters-btn" hidden>
+              <span>Reset All Filters</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Resource Cards Grid -->
+        <div class="resources-grid" id="resources-grid" role="region" aria-label="Learning Resources Grid">
+          <!-- Dynamically populated resource cards -->
+        </div>
+
+        <!-- Empty Filter Results State (hidden by default) -->
+        <div id="resources-empty-state" class="resources-empty-state" hidden>
+          <div class="empty-results-box">
+            <div class="empty-results-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+            </div>
+            <h4>No Learning Resources Match Your Filters</h4>
+            <p>Try clearing your search term, changing the difficulty level, or selecting "All Skills" to see more free learning materials.</p>
+            <button type="button" id="empty-reset-filters-btn" class="btn btn-primary btn-sm">
+              <span>Reset All Filters</span>
+            </button>
+          </div>
+        <!-- Roadmap Callout Banner at bottom of Resources -->
+        <div class="roadmap-callout-banner">
+          <div class="callout-content">
+            <div class="callout-badge">Next Step in Your Preparation</div>
+            <h3 class="callout-title">Turn These Free Resources Into a Weekly Study Plan</h3>
+            <p class="callout-desc">Follow a personalized 4-week roadmap with daily learning milestones, hands-on practice, and portfolio building prioritized by your skill gaps.</p>
+          </div>
+          <div class="callout-action">
+            <a href="#roadmap" class="btn btn-primary btn-lg" id="resources-to-roadmap-btn">
+              <span>Open 4-Week Learning Roadmap</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 3.8: PERSONALIZED LEARNING ROADMAP (Stage 7)
+         ======================================================================= -->
+    <section id="roadmap" class="section roadmap-section" aria-labelledby="roadmap-title">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-badge">Personalized Learning Roadmap</span>
+          <h2 id="roadmap-title" class="section-title">Your 4-Week Career Preparation Plan</h2>
+          <p class="section-subtitle">
+            A structured, high-intensity weekly roadmap prioritized by your skill gap analysis. Complete actionable tasks, study verified free resources, and build practical portfolio evidence.
+          </p>
+        </div>
+
+        <!-- Ethical Preparation Disclaimer Banner -->
+        <div class="roadmap-disclaimer-banner" role="note" aria-label="Roadmap Preparation Disclaimer">
+          <div class="banner-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <div class="banner-body">
+            <strong>Suggested Preparation Plan:</strong>
+            <span> This 4-week roadmap provides a structured study schedule to build practical competence and portfolio evidence. Completing this roadmap demonstrates strong discipline and initiative, but does not guarantee employment or replace comprehensive degree coursework. All study times are suggested planning estimates to help organize your self-paced learning, and individual completion times may vary.</span>
+          </div>
+        </div>
+
+        <!-- Career Selector Pills Bar -->
+        <div class="roadmap-career-selector" role="region" aria-label="Select Career Roadmap">
+          <span class="selector-label">Roadmap Track:</span>
+          <div class="roadmap-career-pills" id="roadmap-career-pills" role="tablist">
+            <button type="button" class="career-pill-btn active" data-career="python-dev" role="tab" aria-selected="true">
+              <span class="pill-dot"></span>
+              <span>Python Developer</span>
+            </button>
+            <button type="button" class="career-pill-btn" data-career="frontend-dev" role="tab" aria-selected="false">
+              <span class="pill-dot"></span>
+              <span>Frontend Developer</span>
+            </button>
+            <button type="button" class="career-pill-btn" data-career="data-analyst" role="tab" aria-selected="false">
+              <span class="pill-dot"></span>
+              <span>Data Analyst</span>
+            </button>
+            <button type="button" class="career-pill-btn" data-career="java-dev" role="tab" aria-selected="false">
+              <span class="pill-dot"></span>
+              <span>Java Developer</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Personalization & Gap Status Notification Card -->
+        <div class="roadmap-context-card" id="roadmap-context-card">
+          <div class="context-main">
+            <div class="context-title-row">
+              <span class="context-label">Active Career Focus:</span>
+              <h3 class="context-career-name" id="roadmap-active-career-name">Python Developer</h3>
+              <span class="context-status-badge" id="roadmap-assessment-status">Personalized by Assessment</span>
+            </div>
+            <p class="context-desc" id="roadmap-context-desc">
+              Tasks matching your <strong>High-Priority Gaps</strong> and <strong>Target Gaps</strong> are highlighted below so you can focus on what matters most.
+            </p>
+          </div>
+          <div class="context-actions">
+            <button type="button" class="btn btn-sm btn-outline" id="roadmap-retake-assessment-btn">
+              <span>Retake Assessment</span>
+            </button>
+            <a href="#gap-analysis" class="btn btn-sm btn-ghost" id="roadmap-view-gaps-btn">
+              <span>View Skill Gaps</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Overall Roadmap Progress Tracker Card -->
+        <div class="roadmap-progress-dashboard" role="region" aria-label="Roadmap Progress Dashboard">
+          <div class="progress-dashboard-header">
+            <div class="progress-title-group">
+              <span class="progress-kicker">Preparation Progress</span>
+              <h3 class="progress-headline" id="roadmap-progress-headline">0% Complete</h3>
+            </div>
+            <div class="progress-stats-group">
+              <div class="stat-item">
+                <span class="stat-number" id="roadmap-completed-count">0</span>
+                <span class="stat-label">of 16 Tasks Done</span>
+              </div>
+              <div class="stat-divider" aria-hidden="true"></div>
+              <div class="stat-item">
+                <span class="stat-number" id="roadmap-remaining-count">16</span>
+                <span class="stat-label">Tasks Remaining</span>
+              </div>
+              <div class="stat-divider" aria-hidden="true"></div>
+              <div class="stat-item">
+                <span class="stat-badge" id="roadmap-current-focus">Week 1: Foundation</span>
+                <span class="stat-label">Current Focus Week</span>
+              </div>
+            </div>
+            <div class="progress-action-group">
+              <button type="button" class="btn btn-sm btn-outline-danger" id="roadmap-reset-btn" title="Reset all task checkboxes for this career">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="1 4 1 10 7 10"></polyline>
+                  <polyline points="23 20 23 14 17 14"></polyline>
+                  <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+                </svg>
+                <span>Reset Progress</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Primary Progress Bar -->
+          <div class="roadmap-progress-bar-container">
+            <div class="roadmap-progress-bar" id="roadmap-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+          </div>
+
+          <!-- Week-by-Week Progress Mini Chips -->
+          <div class="weeks-progress-row" id="roadmap-weeks-chips">
+            <div class="week-chip-item" id="week-chip-1">
+              <span class="week-chip-title">Week 1: Foundation</span>
+              <span class="week-chip-ratio" id="week-chip-ratio-1">0/4</span>
+            </div>
+            <div class="week-chip-item" id="week-chip-2">
+              <span class="week-chip-title">Week 2: Skill Development</span>
+              <span class="week-chip-ratio" id="week-chip-ratio-2">0/4</span>
+            </div>
+            <div class="week-chip-item" id="week-chip-3">
+              <span class="week-chip-title">Week 3: Project Building</span>
+              <span class="week-chip-ratio" id="week-chip-ratio-3">0/4</span>
+            </div>
+            <div class="week-chip-item" id="week-chip-4">
+              <span class="week-chip-title">Week 4: Career Preparation</span>
+              <span class="week-chip-ratio" id="week-chip-ratio-4">0/4</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week Filter Tabs -->
+        <div class="roadmap-week-tabs-bar" role="tablist" aria-label="Filter Roadmap Weeks">
+          <button type="button" class="week-tab-btn active" data-week="all" role="tab" aria-selected="true">
+            <span>All 4 Weeks (Full Roadmap)</span>
+          </button>
+          <button type="button" class="week-tab-btn" data-week="1" role="tab" aria-selected="false">
+            <span>Week 1: Foundation</span>
+          </button>
+          <button type="button" class="week-tab-btn" data-week="2" role="tab" aria-selected="false">
+            <span>Week 2: Skill Development</span>
+          </button>
+          <button type="button" class="week-tab-btn" data-week="3" role="tab" aria-selected="false">
+            <span>Week 3: Project Building</span>
+          </button>
+          <button type="button" class="week-tab-btn" data-week="4" role="tab" aria-selected="false">
+            <span>Week 4: Career Preparation</span>
+          </button>
+        </div>
+
+        <!-- Dynamic Weekly Cards Container -->
+        <div class="roadmap-weeks-container" id="roadmap-weeks-container" role="region" aria-label="4-Week Learning Roadmap Cards">
+          <!-- Dynamically populated 4 weekly cards with task checklists -->
+        </div>
+
+        <!-- Roadmap Footer Actions -->
+        <div class="roadmap-footer-actions">
+          <a href="#resources" class="btn btn-outline btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Browse Free Learning Resources</span>
+          </a>
+          <a href="#gap-analysis" class="btn btn-outline btn-lg">
+            <span>Review Skill Gap Analysis</span>
+          </a>
+          <a href="#careers" class="btn btn-primary btn-lg">
+            <span>Explore Other Career Paths</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 4: HOW IT WORKS
+         ======================================================================= -->
+    <section id="how-it-works" class="section how-it-works-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Simple 4-Step Process</span>
+          <h2 class="section-title">How SkillPath AI Works</h2>
+          <p class="section-subtitle">
+            A practical, structured framework to help college students build foundational competence and prepare for entry-level opportunities.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <h3 class="step-title">Discover Your Career</h3>
+            <p class="step-text">
+              Explore tech roles and understand what developers, engineers, and analysts actually do in everyday industry jobs.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3 class="step-title">Assess Your Skills</h3>
+            <p class="step-text">
+              Take honest, interactive self-assessments to benchmark what you already know against real entry-level requirements.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="step-title">Identify Skill Gaps</h3>
+            <p class="step-text">
+              Instantly see the exact concepts, libraries, and practical tools you are missing so you know precisely what to learn next.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card">
+            <div class="step-number">04</div>
+            <div class="step-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line>
+                <line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+            </div>
+            <h3 class="step-title">Follow Your Learning Roadmap</h3>
+            <p class="step-text">
+              Follow step-by-step milestones with 100% free resources, build portfolio projects, and prepare for real interview rounds.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 5: WHY SKILLPATH AI
+         ======================================================================= -->
+    <section id="why-us" class="section why-us-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">Student-First Platform</span>
+          <h2 class="section-title">Why SkillPath AI</h2>
+          <p class="section-subtitle">
+            Built by students, for students. We cut through the confusion and hype so you can focus on genuine skill development.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Benefit 1 -->
+          <div class="benefit-card">
+            <div class="benefit-icon blue-gradient">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Understand Career Requirements</h3>
+            <p class="benefit-text">
+              Cut through overwhelming job descriptions. Learn the exact core skills and toolsets employers genuinely expect for entry-level roles.
+            </p>
+          </div>
+
+          <!-- Benefit 2 -->
+          <div class="benefit-card">
+            <div class="benefit-icon purple-gradient">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Discover Free Learning Resources</h3>
+            <p class="benefit-text">
+              You do not need expensive bootcamps or paid subscriptions. Access high-quality, verified free documentation, interactive tutorials, and open courses.
+            </p>
+          </div>
+
+          <!-- Benefit 3 -->
+          <div class="benefit-card">
+            <div class="benefit-icon cyan-gradient">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Build Practical Portfolio Projects</h3>
+            <p class="benefit-text">
+              Move beyond basic tutorial clones. Build practical, realistic projects that showcase your actual problem-solving and coding ability to recruiters.
+            </p>
+          </div>
+
+          <!-- Benefit 4 -->
+          <div class="benefit-card">
+            <div class="benefit-icon indigo-gradient">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Prepare for Interviews</h3>
+            <p class="benefit-text">
+              Practice foundational technical and conceptual interview questions with simple, beginner-friendly explanations that build real confidence.
+            </p>
+          </div>
+
+          <!-- Benefit 5 -->
+          <div class="benefit-card benefit-featured">
+            <div class="benefit-icon green-gradient">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="6" y1="3" x2="6" y2="15"></line>
+                <circle cx="18" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M18 9a9 9 0 0 1-9 9"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Follow a Structured Learning Plan</h3>
+            <p class="benefit-text">
+              Clear stage-by-stage progression from Beginner to Intermediate to Advanced preparation. Never get lost wondering what tutorial to watch next.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 6: FINAL CALL TO ACTION
+         ======================================================================= -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-content">
+            <h2 class="cta-heading">Your Future Starts With One Step.</h2>
+            <p class="cta-subheading">
+              Pick your career path, review what skills you need, and begin preparing with clear, student-focused direction today.
+            </p>
+            <div class="cta-actions">
+              <a href="#careers" class="btn btn-light btn-lg">Explore Career Paths</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       SECTION 7: FOOTER
+       ========================================================================= -->
+  <footer id="main-footer" class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo-link" aria-label="SkillPath AI Homepage">
+          <span class="logo-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </span>
+          <span class="logo-text">SkillPath <span class="logo-badge">AI</span></span>
+        </a>
+        <p class="footer-tagline">
+          An open, student-first platform designed to help college learners understand tech career requirements, identify skill gaps, and prepare for employment.
+        </p>
+        <div class="footer-ethics-badge">
+          <span>100% Free Educational Project &bull; Zero Paid Paywalls</span>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <div class="footer-col">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#careers">Explore Careers</a></li>
+            <li><a href="#assessment">Skill Assessment</a></li>
+            <li><a href="#gap-analysis">Skill Gap Analysis</a></li>
+            <li><a href="#resources">Learning Finder</a></li>
+            <li><a href="#roadmap">Learning Roadmap</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#why-us">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Initial Career Paths</h4>
+          <ul class="footer-nav">
+            <li><a href="#careers" class="footer-career-link" data-career="python-dev">Python Developer</a></li>
+            <li><a href="#careers" class="footer-career-link" data-career="frontend-dev">Frontend Developer</a></li>
+            <li><a href="#careers" class="footer-career-link" data-career="data-analyst">Data Analyst</a></li>
+            <li><a href="#careers" class="footer-career-link" data-career="java-dev">Java Developer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Platform Features</h4>
+          <ul class="footer-nav">
+            <li><span class="footer-static-item">Career Explorer (Live)</span></li>
+            <li><span class="footer-static-item">Skill Assessment (Live)</span></li>
+            <li><a href="#gap-analysis" class="footer-feature-link">Skill Gap Analysis (Live)</a></li>
+            <li><a href="#resources" class="footer-feature-link">Free Learning Finder (Live)</a></li>
+            <li><a href="#roadmap" class="footer-feature-link">Personalized Roadmap (Live)</a></li>
+            <li><span class="footer-static-item">Interview Prep (Stage 8)</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 SkillPath AI Team. Built with HTML, CSS, and Vanilla JavaScript. For educational purposes.</p>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       SCRIPTS (Separation of Concerns: Data first, then Application logic)
+       ========================================================================= -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
